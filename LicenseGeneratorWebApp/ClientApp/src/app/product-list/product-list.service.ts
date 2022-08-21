@@ -17,6 +17,11 @@ export class ProductListService {
   getProductList(): Observable<ProductList[]> {
     return this.http.get<ProductList[]>(this.baseApiUrl + '/api/ProductList');
   }
+
+  addProduct(addNewProductRequest: ProductList): Observable<ProductList> {
+    addNewProductRequest.idProdus = '00000000-0000-0000-0000-000000000000';
+    return this.http.post<ProductList>(this.baseApiUrl + '/api/ProductList', addNewProductRequest);
+  }
 }
 
 

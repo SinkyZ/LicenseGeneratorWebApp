@@ -1,5 +1,5 @@
 export interface ProductList {
-  idProdus: number;
+  idProdus: string;
   numeProdus: string;
   shortCode: string;
   status: string;

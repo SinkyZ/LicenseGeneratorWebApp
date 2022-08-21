@@ -22,16 +22,7 @@ namespace LicenseGeneratorWebApp.Controllers
             return Ok(products);
         }
 
-        [HttpPost]
-        public async Task<IActionResult>AddNewProduct([FromBody]ProductList productRequest)
-        {
-            productRequest.IdProdus = Guid.NewGuid();
-
-            await _context.Products.AddAsync(productRequest);
-            await _context.SaveChangesAsync();
-
-            return Ok(productRequest); 
-        }
+        
 
     }
 }
