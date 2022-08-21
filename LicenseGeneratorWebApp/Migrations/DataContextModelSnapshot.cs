@@ -43,7 +43,7 @@ namespace LicenseGeneratorWebApp.Migrations
 
                     b.HasKey("IdProdus");
 
-                    b.ToTable("Products");
+                    b.ToTable("Products", (string)null);
                 });
 #pragma warning restore 612, 618
         }

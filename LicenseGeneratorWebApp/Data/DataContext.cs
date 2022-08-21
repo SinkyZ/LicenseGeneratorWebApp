@@ -14,5 +14,9 @@ namespace LicenseGeneratorWebApp.Data
         //to see an entity in your database as a table
         public DbSet<ProductList> Products { get; set; }
 
+        public DbSet<Client> Clients { get; set; }
+
+        public DbSet<License> Licenses { get; set; }
+
     }
 }

@@ -33,16 +33,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\app\add-product\add-product.component.ts" />
     <None Remove="ClientApp\src\app\product-list\product-list.component.ts" />
     <None Remove="ClientApp\src\app\product-list\product-list.service.ts" />
     <None Remove="ClientApp\src\app\product-list\product-list.ts" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ClientApp\src\app\NewFolder\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\app\add-product\add-product.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\product-list\product-list.component.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\product-list\product-list.service.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\product-list\product-list.ts" />
