@@ -16,7 +16,7 @@ namespace LicenseGeneratorWebApp.Data
 
         public DbSet<Client> Clients { get; set; }
 
-        public DbSet<License> Licenses { get; set; }
+        public DbSet<DefaultLicense> Licenses { get; set; }
 
     }
 }

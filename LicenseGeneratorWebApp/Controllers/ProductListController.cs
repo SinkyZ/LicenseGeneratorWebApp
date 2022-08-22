@@ -22,7 +22,13 @@ namespace LicenseGeneratorWebApp.Controllers
             return Ok(products);
         }
 
-        
+        [HttpPost]
+        public async Task<IActionResult> Products(ProductList products)
+        {
 
+            _context.Products.Add(products);
+            await _context.SaveChangesAsync();
+            return Ok(await _context.Licenses.ToListAsync());
+        }
     }
 }

@@ -12,6 +12,7 @@ import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { AddProductComponent } from './add-product/add-product.component';
+import { AddLicenseComponent } from './generate-license/license.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { AddProductComponent } from './add-product/add-product.component';
     CounterComponent,
     FetchDataComponent,
     ProductListComponent,
-    AddProductComponent
+    AddProductComponent,
+    AddLicenseComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -33,7 +35,8 @@ import { AddProductComponent } from './add-product/add-product.component';
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
       { path: 'product-list', component: ProductListComponent },
-      { path: 'add-product', component: AddProductComponent }
+      { path: 'add-product', component: AddProductComponent },
+      { path: 'generate-license', component: AddLicenseComponent }
     ])
   ],
   providers: [],
